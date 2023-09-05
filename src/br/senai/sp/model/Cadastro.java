@@ -14,7 +14,7 @@ public class Cadastro {
     Scanner teclado = new Scanner(System.in);
 
 
-    public void CadastrarTriangulo(){
+    public Triangulo CadastrarTriangulo(){
         System.out.println("-----------  Triangulo   ----------");
         System.out.println("Informe o valor da Base: ");
         objTriangulo.base = teclado.nextDouble();
@@ -22,9 +22,11 @@ public class Cadastro {
         objTriangulo.altura = teclado.nextDouble();
         System.out.println("-----------------------------------");
 
+        return objTriangulo;
+
     }
 
-    public void CadastrarQuadrado(){
+    public Quadrado CadastrarQuadrado(){
         System.out.println("-----------  Quadrado   ----------");
         System.out.println("Informe o valor do lado 1: ");
         objQuadrado.lado1 = teclado.nextDouble();
@@ -32,24 +34,29 @@ public class Cadastro {
         objQuadrado.lado2 = teclado.nextDouble();
         System.out.println("-----------------------------------");
 
+        return objQuadrado;
     }
 
-    public void CadastrarCirculo(){
+    public Circulo CadastrarCirculo(){
         System.out.println("-----------  Circulo   ----------");
         System.out.println("Informe o valor do raio: ");
         objCirculo.raio = teclado.nextDouble();
         System.out.println("---------------------------------");
 
+        return objCirculo;
 
     }
 
-    public void CadastrarRetangulo(){
+    public Retangulo CadastrarRetangulo(){
         System.out.println("-----------  Retangulo   ----------");
         System.out.println("Informe o valor do lado 1: ");
         objRetangulo.lado1 = teclado.nextDouble();
         System.out.println("Informe o valor do lado 2: ");
         objRetangulo.lado2 = teclado.nextDouble();
         System.out.println("-----------------------------------");
+
+        return objRetangulo;
+
     }
 
 

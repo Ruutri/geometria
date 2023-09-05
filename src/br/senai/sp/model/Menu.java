@@ -12,6 +12,9 @@ public class Menu {
         /** Instancia Cadastro */
         Cadastro objCadastro = new Cadastro();
 
+        /** Instancia Exibir */
+        Exibir objExibir = new Exibir();
+
         while (true) {
 
             System.out.println("/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/");
@@ -31,29 +34,30 @@ public class Menu {
             switch (opcao) {
 
                 case 1:
-                    objCadastro.CadastrarCirculo();
-                    objCadastro.objCirculo.CalcularArea();
-                    objCadastro.objCirculo.CalcularPerimetro();
+                    Circulo objCirculo = objCadastro.CadastrarCirculo();
+                    objCirculo.CalcularArea();
+                    objCirculo.CalcularPerimetro();
 
                     break;
                 case 2:
-                    objCadastro.CadastrarQuadrado();
-                    objCadastro.objQuadrado.CalcularArea();
-                    objCadastro.objQuadrado.CalcularPerimetro();
+                    Quadrado objQuadrado = objCadastro.CadastrarQuadrado();
+                    objQuadrado.CalcularArea();
+                    objQuadrado.CalcularPerimetro();
+                    objExibir.ExibirQuadrado(objQuadrado);
 
                     break;
 
                 case 3:
-                    objCadastro.CadastrarRetangulo();
-                    objCadastro.objRetangulo.CalcularArea();
-                    objCadastro.objRetangulo.CalcularPerimetro();
+                    Retangulo objRetangulo = objCadastro.CadastrarRetangulo();
+                    objRetangulo.CalcularArea();
+                    objRetangulo.CalcularPerimetro();
 
                     break;
 
                 case 4:
-                    objCadastro.CadastrarTriangulo();
-                    objCadastro.objTriangulo.CalcularArea();
-                    objCadastro.objTriangulo.CalcularPerimetro();
+                    Triangulo objTriangulo = objCadastro.CadastrarTriangulo();
+                    objTriangulo.CalcularArea();
+                    objTriangulo.CalcularPerimetro();
 
                     break;
 
