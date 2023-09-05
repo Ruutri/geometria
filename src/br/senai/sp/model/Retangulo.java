@@ -1,20 +1,22 @@
 package br.senai.sp.model;
 
 public class Retangulo {
-    double lado1, lado2;
+    double lado1, lado2, area, perimetro;
 
 
-    public void CalcularArea() {
+    public double CalcularArea() {
 
-        double area = lado1 * lado2;
-        System.out.println(area);
+        area = lado1 * lado2;
+        return area;
+
 
     }
 
-    public void CalcularPerimetro() {
+    public double CalcularPerimetro() {
 
-        double perimetro = lado1 * 2 + lado2 * 2;
-        System.out.println(perimetro);
+        perimetro = lado1 * 2 + lado2 * 2;
+        return perimetro;
+
 
 
     }

@@ -37,6 +37,7 @@ public class Menu {
                     Circulo objCirculo = objCadastro.CadastrarCirculo();
                     objCirculo.CalcularArea();
                     objCirculo.CalcularPerimetro();
+                    objExibir.ExibirCirculo(objCirculo);
 
                     break;
                 case 2:
@@ -51,6 +52,7 @@ public class Menu {
                     Retangulo objRetangulo = objCadastro.CadastrarRetangulo();
                     objRetangulo.CalcularArea();
                     objRetangulo.CalcularPerimetro();
+                    objExibir.ExibirRetangulo(objRetangulo);
 
                     break;
 
@@ -58,6 +60,7 @@ public class Menu {
                     Triangulo objTriangulo = objCadastro.CadastrarTriangulo();
                     objTriangulo.CalcularArea();
                     objTriangulo.CalcularPerimetro();
+                    objExibir.ExibirTriangulo(objTriangulo);
 
                     break;
 

@@ -2,19 +2,19 @@ package br.senai.sp.model;
 
 public class Circulo {
 
-    double raio;
+    double raio, area, perimetro;
 
-    public void CalcularArea(){
+    public double CalcularArea(){
 
-        double area = Math.PI * (raio * raio);
-        System.out.println(area);
+        area = Math.PI * (raio * raio);
+        return area;
 
     }
 
-    public void CalcularPerimetro(){
+    public double CalcularPerimetro(){
 
-        double perimetro = 2 * Math.PI * raio;
-        System.out.println(perimetro);
+        perimetro = 2 * Math.PI * raio;
+        return perimetro;
 
     }
 

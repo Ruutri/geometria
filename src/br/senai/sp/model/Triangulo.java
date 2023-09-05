@@ -1,19 +1,20 @@
 package br.senai.sp.model;
 
 public class Triangulo {
-    double base, altura;
+    double base, altura, area, perimetro;
 
-    public void CalcularArea(){
+    public double CalcularArea(){
 
-        double area = (base * altura) / 2;
-        System.out.println(area);
+        area = (base * altura) / 2;
+        return area;
+
 
     }
 
-    public void CalcularPerimetro(){
+    public double CalcularPerimetro(){
 
-        double perimetro = base + altura * 2;
-        System.out.println(perimetro);
+        perimetro = base + altura * 2;
+        return perimetro;
     }
 
 
